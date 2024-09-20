@@ -1,0 +1,29 @@
+{
+    "@context": [ 
+        "context.json",
+        { 
+            "@base": "https://w3id.org/skg-if/data/example/",
+            "": "https://w3id.org/skg-if/data/example/"
+        }
+    ],
+    "@graph": [
+        {
+            "local identifier": "topic_1",
+
+            "identifiers": [
+                {
+                    "scheme": "url",
+                    "value": "http://id.loc.gov/authorities/classification/QA75.5-QA76.95"
+                }
+            ],
+
+            "entity type": "topic",
+
+            "labels": {
+                "en": "Computer Science",
+                "it": "Informatica"
+            }
+            
+        }
+    ]
+}
