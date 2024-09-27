@@ -1,1 +1,1 @@
-# Context
+# JSON-LD context
