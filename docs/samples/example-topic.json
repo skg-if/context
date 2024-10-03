@@ -1,6 +1,6 @@
 {
     "@context": [ 
-        "context.json",
+        "https://w3id.org/skg-if/context/skg-if.json",
         { 
             "@base": "https://w3id.org/skg-if/data/example/",
             "": "https://w3id.org/skg-if/data/example/"
@@ -8,7 +8,7 @@
     ],
     "@graph": [
         {
-            "local identifier": "topic_1",
+            "local_identifier": "topic_1",
 
             "identifiers": [
                 {
@@ -17,7 +17,7 @@
                 }
             ],
 
-            "entity type": "topic",
+            "entity_type": "topic",
 
             "labels": {
                 "en": "Computer Science",

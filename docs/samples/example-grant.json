@@ -1,6 +1,6 @@
 {
     "@context": [ 
-        "../skg-if.json",
+        "https://w3id.org/skg-if/context/skg-if.json",
         { 
             "@base": "https://w3id.org/skg-if/data/example/",
             "": "https://w3id.org/skg-if/data/example/"
@@ -8,7 +8,7 @@
     ],
     "@graph": [
         {
-            "local identifier": "g1",
+            "local_identifier": "g1",
 
             "identifiers": [
                 {
@@ -17,7 +17,7 @@
                 }
             ],
 
-            "entity type": "grant",
+            "entity_type": "grant",
 
             "title": "GraspOS: next Generation Research Assessment to Promote Open Science",
 
@@ -25,11 +25,11 @@
 
             "acronym": "GraspOS",
 
-            "funding agency": "eu",
+            "funding_agency": "eu",
 
-            "funding stream": "Horizon Europe",
+            "funding_stream": "Horizon Europe",
 
-            "funded amount": 2985441.00,
+            "funded_amount": 2985441.00,
             
             "currency": "EUR",
             
@@ -47,7 +47,7 @@
             "contributions": [
                 {
                     "by": "person_123",
-                    "declared affiliations": ["org_1", "org_3"],
+                    "declared_affiliations": ["org_1", "org_3"],
                     "role": [ "lead applicant", "project leader" ]
                 }
             ]

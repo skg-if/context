@@ -33,7 +33,7 @@
 
         "none": { "@id": "@none", "@protected": true },
 
-        "local identifier": { "@id": "@id", "@protected": true },
+        "local_identifier": { "@id": "@id", "@protected": true },
 
         "identifiers": { "@id": "datacite:hasIdentifier", "@type": "@vocab" , "@protected": true },
         "scheme": { "@id": "datacite:usesIdentifierScheme", "@type": "@vocab" , "@protected": true },
@@ -47,13 +47,13 @@
         "crossref": { "@id": "datacite:crossref", "@protected": true },
         "openalex": { "@id": "datacite:openalex", "@protected": true },
 
-        "entity type": { "@id": "@type", "@type": "@vocab" , "@protected": true },
+        "entity_type": { "@id": "@type", "@type": "@vocab" , "@protected": true },
         "product": { "@id": "fabio:Work", "@protected": true },
 
         "titles": { "@id": "dcterms:title", "@container": "@language" , "@protected": true },
         "abstracts": { "@id": "dcterms:abstract", "@container": "@language" , "@protected": true },
         
-        "product type": { "@id": "@type", "@type": "@vocab" , "@protected": true },
+        "product_type": { "@id": "@type", "@type": "@vocab" , "@protected": true },
         "literature": { "@id": "fabio:ScholarlyWork", "@protected": true },
         "research data": { "@id": "fabio:Dataset", "@protected": true },
         "research software": { "@id": "fabio:Software", "@protected": true },
@@ -62,12 +62,12 @@
         "topics": { "@id": "bido:holdsBibliometricDataInTime", "@type": "@vocab" , "@protected": true },
         "term": { "@id": "bido:withBibliometricData", "@type": "@vocab" , "@protected": true },
         "provenance": { "@id": "prov:wasGeneratedBy", "@type": "@vocab" , "@protected": true },
-        "associated with": { "@id": "prov:wasAssociatedWith", "@type": "@vocab" , "@protected": true },
+        "associated_with": { "@id": "prov:wasAssociatedWith", "@type": "@vocab" , "@protected": true },
         "trust": {"@id": "rdf:value", "@type": "xsd:float", "@protected": true },
 
         "contributions": {"@id": "pro:isRelatedToRoleInTime", "@type": "@vocab" , "@protected": true },
         "by": { "@id": "pro:isHeldBy", "@type": "@vocab" , "@protected": true },
-        "declared affiliations": { "@id": "pro:relatesToOrganization", "@type": "@vocab" , "@protected": true },
+        "declared_affiliations": { "@id": "pro:relatesToOrganization", "@type": "@vocab" , "@protected": true },
         "rank": { "@id": "co:index", "@type": "xsd:positiveInteger" , "@protected": true },
         "contribution": { "@id": "scoro:withContribution", "@type": "@vocab" , "@protected": true },
         "role": { "@id": "pro:withRole", "@type": "@vocab" , "@protected": true },
@@ -93,7 +93,7 @@
         
         "type": { "@id": "rdf:type", "@type": "@vocab", "@protected": true },
         "class": { "@id": "@id", "@protected": true },
-        "defined in": { "@id": "skos:inScheme", "@type": "@vocab", "@protected": true },
+        "defined_in": { "@id": "skos:inScheme", "@type": "@vocab", "@protected": true },
         "labels": { "@id": "skos:prefLabel", "@container": "@language" , "@protected": true },
         
         "dates": { "@id": "@nest", "@protected": true },
@@ -114,13 +114,13 @@
         "retraction": { "@id": "fabio:hasRetractionDate", "@type": "xsd:dateTime", "@nest": "dates" , "@protected": true },
         "validity": { "@id": "dctemrs:valid", "@type": "xsd:dateTime", "@nest": "dates" , "@protected": true },
 
-        "peer review": { "@id": "pso:holdsStatusInTime", "@type": "@vocab", "@protected": true },
+        "peer_review": { "@id": "pso:holdsStatusInTime", "@type": "@vocab", "@protected": true },
         "status": { "@id": "pso:withStatus", "@type": "@vocab", "@protected": true },
         "peer reviewed": { "@id": "pso:peer-reviewed", "@protected": true },
         "under review": { "@id": "pso:under-review", "@protected": true },
         "description": { "@id": "dcterms:description", "@type": "xsd:string", "@protected": true },
 
-        "access rights": { "@id": "pso:holdsStatusInTime", "@type": "@vocab", "@protected": true },
+        "access_rights": { "@id": "pso:holdsStatusInTime", "@type": "@vocab", "@protected": true },
         "open": { "@id": "pso:open-access", "@protected": true },
         "closed": { "@id": "pso:closed-access", "@protected": true },
         "embargoed": { "@id": "pso:embargoed", "@protected": true },
@@ -140,18 +140,18 @@
         "last": { "@id": "prism:endingPage", "@type": "xsd:string", "@nest":"biblio", "@protected": true },
         "number": { "@id": "fabio:hasSequenceIdentifier", "@type": "@vocab", "@nest":"biblio", "@protected": true },
         "in": { "@id": "frbr:partOf", "@type": "@vocab", "@nest":"biblio", "@protected": true },
-        "hosting data source": { "@id": "dcat:accessService", "@type": "@vocab", "@nest":"biblio", "@protected": true },
+        "hosting_data_source": { "@id": "dcat:accessService", "@type": "@vocab", "@nest":"biblio", "@protected": true },
         
-        "relevant organisations": { "@id": "dcterms:relation", "@type": "@vocab", "@protected": true },
+        "relevant_organisations": { "@id": "dcterms:relation", "@type": "@vocab", "@protected": true },
 
         "funding": { "@id": "frapo:isFundedBy", "@type": "@vocab", "@protected": true },
         
-        "related products": { "@id": "@nest", "@protected": true },
+        "related_products": { "@id": "@nest", "@protected": true },
         "cites": { "@id": "cito:cites", "@type": "@vocab", "@nest": "related products", "@protected": true } ,
-        "is supplemented by": { "@id": "frbr:supplement", "@type": "@vocab", "@nest": "related products", "@protected": true },
-        "is documented by": { "@id": "cito:isDocumentedBy", "@type": "@vocab", "@nest": "related products", "@protected": true },
-        "is new version of": { "@id": "frbr:revisionOf", "@type": "@vocab", "@nest": "related products", "@protected": true },
-        "is part of": { "@id": "frbr:partOf", "@type": "@vocab", "@nest": "related products", "@protected": true },
+        "is_supplemented_by": { "@id": "frbr:supplement", "@type": "@vocab", "@nest": "related products", "@protected": true },
+        "is_documented_by": { "@id": "cito:isDocumentedBy", "@type": "@vocab", "@nest": "related products", "@protected": true },
+        "is_new_version_of": { "@id": "frbr:revisionOf", "@type": "@vocab", "@nest": "related products", "@protected": true },
+        "is_part_of": { "@id": "frbr:partOf", "@type": "@vocab", "@nest": "related products", "@protected": true },
 
 
 
@@ -165,8 +165,8 @@
         "organisation": { "@id": "foaf:Organization", "@protected": true },
         "name": { "@id": "foaf:name", "@protected": true },
         
-        "given name": { "@id": "foaf:givenName", "@protected": true },
-        "family name": { "@id": "foaf:familyName", "@protected": true },
+        "given_name": { "@id": "foaf:givenName", "@protected": true },
+        "family_name": { "@id": "foaf:familyName", "@protected": true },
         
         "affiliations": { "@id": "pro:holdsRoleInTime", "@type": "@vocab" , "@protected": true },
         "affiliation": { "@id": "pro:relatesToOrganization", "@type": "@vocab" , "@protected": true },
@@ -176,8 +176,8 @@
         "affiliate": { "@id": "scoro:affiliate", "@protected": true },
 
         "ror": { "@id": "datacite:ror", "@protected": true },
-        "short name": { "@id": "frapo:hasAcronym", "@protected": true },
-        "other names": { "@id": "skos:altLabel", "@protected": true },
+        "short_name": { "@id": "frapo:hasAcronym", "@protected": true },
+        "other_names": { "@id": "skos:altLabel", "@protected": true },
         "country": { "@id": "frapo:hasCountry", "@protected": true },
         "website": { "@id": "foaf:homepage", "@type": "@vocab" , "@protected": true },
         "archive": { "@id": "frapo:Repository", "@protected": true },
@@ -219,7 +219,7 @@
 
         "series": { "@id": "prism:seriesTitle", "@protected": true },
 
-        "creation date": { "@id": "dcterms:created", "@type": "xsd:dateTime", "@protected": true },
+        "creation_date": { "@id": "dcterms:created", "@type": "xsd:dateTime", "@protected": true },
 
 
 
@@ -235,25 +235,25 @@
         "metadata only access": { "@id": "coar:c_14cb", "@protected": true },
         "open access": { "@id": "coar:c_abf2", "@protected": true },
         "restricted access": { "@id": "coar:c_16ec", "@protected": true },
-        "documented at": { "@id": "foaf:page", "@type": "@vocab", "@protected": true },
+        "documented_at": { "@id": "foaf:page", "@type": "@vocab", "@protected": true },
         "metadata": { "@id": "fabio:Metadata", "@protected": true },
         "any": { "@id": "fabio:Work", "@protected": true },
 
-        "persistent identity systems": { "@id": "dcterms:conformsTo", "@type": "@vocab" , "@protected": true },
-        "pid schemes": { "@id": "dcterms:requires", "@type": "@vocab" , "@protected": true },
+        "persistent_identity_systems": { "@id": "dcterms:conformsTo", "@type": "@vocab" , "@protected": true },
+        "pid_schemes": { "@id": "dcterms:requires", "@type": "@vocab" , "@protected": true },
         "for": { "@id": "dcterms:coverage", "@type": "@vocab" , "@protected": true },
 
         "audience": { "@id": "schema:audience", "@type": "@vocab" , "@protected": true },
-        "audience type": { "@id": "schema:audienceType", "@type": "xsd:string" , "@protected": true },
+        "audience_type": { "@id": "schema:audienceType", "@type": "xsd:string" , "@protected": true },
 
-        "data source classification": { "@id": "dcat:theme", "@type": "@vocab" , "@protected": true },
+        "data_source_classification": { "@id": "dcat:theme", "@type": "@vocab" , "@protected": true },
         "aggregator": { "@id": "fabio:Catalog", "@protected": true },
         "scientific database": { "@id": "fabio:Database", "@protected": true },
         "journal archive": { "@id": "fabio:Journal", "@protected": true },
         "publisher archive": { "@id": "vivo:Publisher", "@protected": true },
         "cris system": { "@id": "frapo:ResearchInformationSystem", "@protected": true },
 
-        "research product type": { "@id": "dcterms:coverage", "@type": "@vocab" , "@protected": true },
+        "research_product_type": { "@id": "dcterms:coverage", "@type": "@vocab" , "@protected": true },
 
         "discipline": { "@id": "dcterms:subject", "@type": "@vocab", "@context": {"@base": "http://id.loc.gov/authorities/classification/"}, "@protected": true },
         "all": { "@id": "loc:classification", "@protected": true },
@@ -265,13 +265,13 @@
 
         "abstract": { "@id": "dcterms:abstract", "@protected": true },
 
-        "funding agency": { "@id": "frapo:hasFundingAgency", "@type": "@vocab" , "@protected": true },
+        "funding_agency": { "@id": "frapo:hasFundingAgency", "@type": "@vocab" , "@protected": true },
 
-        "funding stream": { "@id": "frapo:hasCallIdentifier", "@protected": true },
+        "funding_stream": { "@id": "frapo:hasCallIdentifier", "@protected": true },
 
         "currency": { "@id": "frapo:hasCurrencyCode", "@type": "xsd:string", "@protected": true },
 
-        "funded amount": { "@id": "frapo:hasCurrency", "@type": "xsd:float", "@protected": true },
+        "funded_amount": { "@id": "frapo:hasCurrency", "@type": "xsd:float", "@protected": true },
 
         "keywords": { "@id": "prism:keyword", "@protected": true },
 

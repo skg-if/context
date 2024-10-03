@@ -8,7 +8,7 @@
     ],
     "@graph": [
         {
-            "local identifier": "product_1",
+            "local_identifier": "product_1",
 
             "identifiers": [
                 {
@@ -17,7 +17,7 @@
                 }
             ],
 
-            "entity type": "product",
+            "entity_type": "product",
 
             "titles": {
                 "en": ["Title of the paper", "Title variant"],
@@ -31,23 +31,23 @@
                 "none": ["Aperpay ummarysay"]
             },
 
-            "product type": "literature",
+            "product_type": "literature",
 
             "topics": [
                 {
                     "term": "topic_1",
                     "provenance": [
                         {
-                            "associated with": "openaire",
+                            "associated_with": "openaire-infra",
                             "trust": 0.7
                         }
                     ]
                 },
                 {
-                    "topic": "topic_2",
+                    "term": "topic_2",
                     "provenance": [
                         {
-                            "type": "OpenAlex",
+                            "type": "openalex-infra",
                             "trust": 0.9
                         }
                     ]
@@ -57,7 +57,7 @@
             "contributions": [
                 {
                     "by": "person_123",
-                    "declared affiliations": ["org_1", "org_3"],
+                    "declared_affiliations": ["org_1", "org_3"],
                     "rank": 1,
                     "contribution": ["writing – original draft", "conceptualization"],
                     "role": "author"
@@ -71,7 +71,7 @@
                         "labels": {
                             "en": "preprint"
                         },
-                        "defined in": "http://purl.org/spar/fabio"
+                        "defined_in": "http://purl.org/spar/fabio"
                     },
                     "dates": {
                         "modified": ["2024-01-15T14:15:43Z", "2024-02-11T11:12:04Z"],
@@ -87,11 +87,11 @@
                             "value": "https://arxiv.org/abs/2407.13329"
                         }
                     ],
-                    "peer review": {
+                    "peer_review": {
                         "status": "peer reviewed",
                         "description": "single-blind peer review"
                     },
-                    "access rights": {
+                    "access_rights": {
                         "status": "restricted",
                         "description": "Only publishers can access the manifestation"
                     },
@@ -104,21 +104,22 @@
                             "last": "645"
                         },
                         "volume": "17",
-                        "in": "ven1"
+                        "in": "ven1",
+                        "hosting_data_source": "https://arxiv.org/pdf/2407.13329"
                     }
                 }
             ],
 
-            "relevant organisations": ["org_1", "org3"],
+            "relevant_organisations": ["org_1", "org3"],
             
             "funding": ["grant_1", "grant_2"],
             
-            "related products": {
+            "related_products": {
                 "cites": ["product_2", "product_3", "product_4"],
-                "is supplemented by": ["product_7", "product_8", "product_9"],
-                "is documented by": ["product_10", "product_13"],
-                "is new version of": ["product_10", "product_13"],
-                "is part of": ["product_11"]
+                "is_supplemented_by": ["product_7", "product_8", "product_9"],
+                "is_documented_by": ["product_10", "product_13"],
+                "is_new_version_of": ["product_10", "product_13"],
+                "is_part_of": ["product_11"]
             }
         }
     ]
