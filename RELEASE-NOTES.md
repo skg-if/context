@@ -1,5 +1,8 @@
 # Releases Notes
 
+## Version current - (to be published)
+* The term `grant_number` has been added to the entity `Grant`. It reuse the [FRAPO](https://w3id.org/spar/frapo) data property `hasGrantNumber`.
+
 ## Version 0.2.0 - 2024-10-03
 
 * All the keys in the context that contained spaces have been substituted with identical keys where spaces have been replaced by underscores. In particular, we changed the following keys:
