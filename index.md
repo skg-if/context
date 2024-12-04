@@ -19,9 +19,9 @@ The current (i.e., last) version of the JSON-LD context is available at [https:/
 
 
 ----
-[Agent]: {% context/docs/samples/example-agent.json %}
-[Data source]: {% context/docs/samples/example-data-source.json %}
-[Grant]: {% context/docs/samples/example-grant.json %}
-[Research product]: {% context/docs/samples/example-research-product.json %}
-[Topic]: {% context/docs/samples/example-topic.json %}
-[Venue]: {% context/docs/samples/example-venue.json %}
+[Agent]: {% link context/docs/samples/example-agent.json %}
+[Data source]: {% link context/docs/samples/example-data-source.json %}
+[Grant]: {% link context/docs/samples/example-grant.json %}
+[Research product]: {% link context/docs/samples/example-research-product.json %}
+[Topic]: {% link context/docs/samples/example-topic.json %}
+[Venue]: {% link context/docs/samples/example-venue.json %}
