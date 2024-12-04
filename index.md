@@ -10,9 +10,18 @@ The [Github repository](https://github.com/skg-if/context) contains everything t
 It includes samples, conversion scripts and a version tracking folder.
 
 The current (i.e., last) version of the JSON-LD context is available at [https://w3id.org/skg-if/context/skg-if.json](https://w3id.org/skg-if/context/docs/skg-if.json). The following toy examples for each entity defined by the [SKG-IF interoperability framework](/interoperability-framework/) are also available online:
-* [Agent](docs/samples/example-agent.json)
-* [Data source](docs/samples/example-data-source.json)
-* [Grant](docs/samples/example-grant.json)
-* [Research product](docs/samples/example-research-product.json)
-* [Topic](docs/samples/example-topic.json)
+* [Agent]
+* [Data source]
+* [Grant]
+* [Research product]
+* [Topic]
 * [Venue](docs/samples/example-venue.json)
+
+
+----
+[Agent]: {% context/docs/samples/example-agent.json %}
+[Data source]: {% context/docs/samples/example-data-source.json %}
+[Grant]: {% context/docs/samples/example-grant.json %}
+[Research product]: {% context/docs/samples/example-research-product.json %}
+[Topic]: {% context/docs/samples/example-topic.json %}
+[Venue]: {% context/docs/samples/example-venue.json %}
