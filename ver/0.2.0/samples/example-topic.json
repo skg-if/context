@@ -1,9 +1,9 @@
 {
     "@context": [ 
-        "../skg-if.json",
+        "https://w3id.org/skg-if/context/ver/0.2.0/skg-if.json",
         { 
-            "@base": "https://w3id.org/skg-if/data/example/",
-            "": "https://w3id.org/skg-if/data/example/"
+            "@base": "https://w3id.org/skg-if/sandbox/skg-if-wg/",
+            "skg": "https://w3id.org/skg-if/sandbox/skg-if-wg/"
         }
     ],
     "@graph": [

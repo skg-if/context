@@ -1,9 +1,9 @@
 {
     "@context": [ 
-        "https://w3id.org/skg-if/context/skg-if.json",
+        "https://w3id.org/skg-if/context/ver/1.0.0/skg-if.json",
         { 
-            "@base": "https://w3id.org/skg-if/data/example/",
-            "": "https://w3id.org/skg-if/data/example/"
+            "@base": "https://w3id.org/skg-if/sandbox/skg-if-wg/",
+            "skg": "https://w3id.org/skg-if/sandbox/skg-if-wg/"
         }
     ],
     "@graph": [
@@ -20,6 +20,8 @@
             "entity_type": "grant",
 
             "title": "GraspOS: next Generation Research Assessment to Promote Open Science",
+
+            "grant_number": "101095129",
 
             "abstract": "Open science (OS) has proven to provide several benefits to scientific research and collaboration. The EU-funded GraspOS project will further extend the reach and influence of OS. Specifically, it will develop a data infrastructure that will help policy reforms and bring about the adoption of a responsible research assessment system that embeds OS practices. Additionally, the project will create the necessary tools to expand the reach of the European Open Science Cloud ecosystem and improve monitoring services. These services will also allow for policy-level rewards that encourage OS practices and mindsets.",
 

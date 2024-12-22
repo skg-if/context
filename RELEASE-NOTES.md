@@ -1,7 +1,7 @@
 # Releases Notes
 
-## Version current - (to be published)
-* The term `grant_number` has been added to the entity `Grant`. It reuse the [FRAPO](https://w3id.org/spar/frapo) data property `hasGrantNumber`.
+## Version 1.0.0 - 2024-12-22
+* The term `grant_number` has been added to the entity `Grant`. It reuse the [FRAPO](https://w3id.org/spar/frapo) data property `frapo:hasGrantNumber`.
 
 ## Version 0.2.0 - 2024-10-03
 
