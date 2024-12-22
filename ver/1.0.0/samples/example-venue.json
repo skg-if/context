@@ -1,6 +1,6 @@
 {
     "@context": [ 
-        "https://w3id.org/skg-if/context/ver/1.0.0/skg-if.json",
+        "https://w3id.org/skg-if/context/1.0.0/skg-if.json",
         { 
             "@base": "https://w3id.org/skg-if/sandbox/skg-if-wg/",
             "skg": "https://w3id.org/skg-if/sandbox/skg-if-wg/"

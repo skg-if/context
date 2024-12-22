@@ -18,6 +18,16 @@ The current (i.e., last) version of the JSON-LD context is available at [https:/
 * [Topic]
 * [Venue](docs/samples/example-venue.json)
 
+One can access the JSON-LD contexts of all (current and previous) versions by using a version number in the `w3id.org` URL, before the name of the JSON file, following this pattern:
+
+```
+https://w3id.org/skg-if/context/<X.Y.Z>/skg-if.json
+```
+
+For instance:
+* `https://w3id.org/skg-if/context/1.0.0/skg-if.json` allows to access to version 1.0.0 of the JSON-LD context;
+* `https://w3id.org/skg-if/context/0.2.0/skg-if.json` allows to access to version 0.2.0 of the JSON-LD context;
+* and so on.
 
 ----
 [Agent]: {% link context/ver/current/samples/example-agent.json %}
