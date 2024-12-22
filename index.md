@@ -1,15 +1,16 @@
 ---
-title: JSON-LD context
+title: SKG-IF JSON-LD Context
 layout: default
-nav_order: 3
+nav_order: 4
 ---
 
-# JSON-LD context
+# SKG-IF JSON-LD Context
 
 The [Github repository](https://github.com/skg-if/context) contains everything that is relevant to the JSON-LD context.
 It includes samples, conversion scripts and a version tracking folder.
 
 The current (i.e., last) version of the JSON-LD context is available at [https://w3id.org/skg-if/context/skg-if.json](https://w3id.org/skg-if/context/docs/skg-if.json). The following toy examples for each entity defined by the [SKG-IF interoperability framework](/interoperability-framework/) are also available online:
+
 * [Agent]
 * [Data source]
 * [Grant]
