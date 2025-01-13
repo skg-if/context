@@ -1,5 +1,5 @@
 ---
-title: SKG-IF JSON-LD Context
+title: JSON-LD Context
 layout: default
 nav_order: 4
 ---
