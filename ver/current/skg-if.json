@@ -291,6 +291,6 @@
 
 
 
-        "topic": { "@id": "fabio:SubjectTerm" }
+        "topic": "fabio:SubjectTerm"
     }
 }
