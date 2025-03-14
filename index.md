@@ -1,10 +1,10 @@
 ---
-title: JSON-LD Context
+title: JSON-LD context
 layout: default
 nav_order: 4
 ---
 
-# JSON-LD Context
+# JSON-LD context
 
 The [Github repository](https://github.com/skg-if/context) contains everything that is relevant to the JSON-LD context.
 It includes samples, conversion scripts and a version tracking folder.
