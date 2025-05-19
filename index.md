@@ -16,7 +16,7 @@ The current (i.e., last) version of the JSON-LD context is available at [https:/
 * [Grant]
 * [Research product]
 * [Topic]
-* [Venue](docs/samples/example-venue.json)
+* [Venue]
 
 One can access the JSON-LD contexts of all (current and previous) versions by using a version number in the `w3id.org` URL, before the name of the JSON file, following this pattern:
 
