@@ -1,0 +1,299 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "bido": "http://purl.org/spar/bido/",
+        "cito": "http://purl.org/spar/cito/",
+        "co": "http://purl.org/co/",
+        "coar": "http://purl.org/coar/access_right/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "fabio": "http://purl.org/spar/fabio/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "frapo": "http://purl.org/cerif/frapo/",
+        "frbr": "http://purl.org/vocab/frbr/core#",
+        "lcc": "http://id.loc.gov/authorities/classification/",
+        "loc": "http://id.loc.gov/authorities/",
+        "literal": "http://www.essepuntato.it/2010/06/literalreification/",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "org": "https://www.w3.org/ns/org#",
+        "prism": "http://prismstandard.org/namespaces/basic/2.0/",
+        "pro": "http://purl.org/spar/pro/",
+        "pso": "http://purl.org/spar/pso/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "schema": "https://schema.org/",
+        "scoro": "http://purl.org/spar/scoro/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "ti": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#",
+        "tvc": "http://www.essepuntato.it/2012/04/tvc/",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+        "none": "@none",
+
+        "local_identifier": "@id",
+
+        "identifiers": { "@id": "datacite:hasIdentifier", "@type": "@vocab"  },
+        "scheme": { "@id": "datacite:usesIdentifierScheme", "@type": "@vocab"  },
+        "value": "literal:hasLiteralValue",
+        "arxiv": "datacite:arxiv",
+        "bibcode": "datacite:bibcode",
+        "crossref": "datacite:crossref",
+        "doi": "datacite:doi",
+        "eissn": "datacite:eissn",
+        "handle": "datacite:handle",
+        "isbn": "datacite:isbn",
+        "issn": "datacite:issn",
+        "ivoid": "datacite:ivoid",
+        "lissn": "datacite:lissn",
+        "omid": "datacite:omid",
+        "openalex": "datacite:openalex",
+        "opendoar": "datacite:opendoar",
+        "orcid": "datacite:orcid",
+        "pmcid": "datacite:pmcid",
+        "pmid": "datacite:pmid",
+        "ror": "datacite:ror",
+        "spase": "datacite:spase",
+        "url": "datacite:url",
+        "urn": "datacite:urn",
+        "viaf": "datacite:viaf",
+        "w3id": "datacite:w3id",
+
+        "entity_type": { "@id": "@type", "@type": "@vocab"  },
+        "product": "fabio:Work",
+
+        "titles": { "@id": "dcterms:title", "@container": "@language"  },
+        "abstracts": { "@id": "dcterms:abstract", "@container": "@language"  },
+        
+        "product_type": { "@id": "@type", "@type": "@vocab"  },
+        "literature": "fabio:ScholarlyWork",
+        "research data": "fabio:Dataset",
+        "research software": "fabio:Software",
+        "other": "fabio:Work",
+
+        "topics": { "@id": "bido:holdsBibliometricDataInTime", "@type": "@vocab"  },
+        "term": { "@id": "bido:withBibliometricData", "@type": "@vocab"  },
+        "provenance": { "@id": "prov:wasGeneratedBy", "@type": "@vocab"  },
+        "associated_with": { "@id": "prov:wasAssociatedWith", "@type": "@vocab"  },
+        "trust": {"@id": "rdf:value", "@type": "xsd:float" },
+
+        "contributions": {"@id": "pro:isRelatedToRoleInTime", "@type": "@vocab"  },
+        "by": { "@id": "pro:isHeldBy", "@type": "@vocab"  },
+        "declared_affiliations": { "@id": "pro:relatesToOrganization", "@type": "@vocab"  },
+        "rank": { "@id": "co:index", "@type": "xsd:positiveInteger"  },
+        "contribution_types": { "@id": "scoro:withContribution", "@type": "@vocab"  },
+        "role": { "@id": "pro:withRole", "@type": "@vocab"  },
+        "author": "pro:author",
+        "publisher": "pro:publisher",
+        "editor": "pro:editor",
+        "conceptualization": "scoro:conceives-project",
+        "data curation": "scoro:processes-data",
+        "formal analysis": "scoro:analyses-data",
+        "funding acquisition": "scoro:secures-funding",
+        "investigation": "scoro:leads-investigation",
+        "methodology": "scoro:develops-methodology",
+        "project administration": "scoro:manages-project",
+        "resources": "scoro:provides-tools-equipment-or-facilities",
+        "software": "scoro:creates-software",
+        "supervision": "scoro:supervises-colleagues",
+        "validation": "scoro:ensures-regulatory-compliance",
+        "visualization": "scoro:prepares-illustrations",
+        "writing – original draft": "scoro:writes-manuscript-draft",
+        "writing – review & editing": "scoro:revises-manuscript",
+
+        "manifestations": { "@id": "frbr:realization", "@type": "@vocab" },
+        
+        "type": { "@id": "rdf:type", "@type": "@vocab" },
+        "types": { "@id": "rdf:type", "@type": "@vocab" },
+        "class": "@id",
+        "defined_in": { "@id": "skos:inScheme", "@type": "@vocab" },
+        "labels": { "@id": "skos:prefLabel", "@container": "@language"  },
+        
+        "dates": "@nest",
+        "acceptance": { "@id": "dcterms:dateAccepted", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "access": { "@id": "fabio:hasAccessDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "copyright": { "@id": "dcterms:dateCopyrighted", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "correction": { "@id": "fabio:hasCorrectionDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "creation": { "@id": "dcterms:created", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "collected": { "@id": "fabio:hasDateCollected", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "received": { "@id": "fabio:hasDateReceived", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "decision": { "@id": "fabio:hasDecisionDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "deposit": { "@id": "fabio:hasDepositDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "embargo": { "@id": "fabio:hasEmbargoDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "modified": { "@id": "dcterms:modified", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "distribution": { "@id": "fabio:hasDistributionDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "publication": { "@id": "dcterms:issued", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "request": { "@id": "fabio:hasRequestDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "retraction": { "@id": "fabio:hasRetractionDate", "@type": "xsd:dateTime", "@nest": "dates"  },
+        "validity": { "@id": "dctemrs:valid", "@type": "xsd:dateTime", "@nest": "dates"  },
+
+        "peer_review": { "@id": "pso:holdsStatusInTime", "@type": "@vocab" },
+        "status": { "@id": "pso:withStatus", "@type": "@vocab" },
+        "peer reviewed": "pso:peer-reviewed",
+        "under review": "pso:under-review",
+        "description": { "@id": "dcterms:description", "@type": "xsd:string" },
+
+        "access_rights": { "@id": "pso:holdsStatusInTime", "@type": "@vocab" },
+        "open": "pso:open-access",
+        "closed": "pso:closed-access",
+        "embargoed": "pso:embargoed",
+        "retricted": "pso:restricted-access",
+        "unavailable": "pso:unpublished",
+
+        "license": { "@id": "dcterms:license", "@type": "@vocab" },
+
+        "version": { "@id": "prism:versionIdentifier", "@type": "xsd:string" },
+
+        "biblio": "@nest",
+        "issue": { "@id": "prism:issueIdentifier", "@type": "xsd:string", "@nest":"biblio" },
+        "volume": { "@id": "prism:volume", "@type": "xsd:string", "@nest":"biblio" },
+        "edition": { "@id": "prism:edition", "@type": "xsd:string", "@nest":"biblio" },
+        "pages": { "@id": "frbr:embodiment", "@type": "@vocab", "@nest":"biblio" },
+        "first": { "@id": "prism:startingPage", "@type": "xsd:string", "@nest":"biblio" },
+        "last": { "@id": "prism:endingPage", "@type": "xsd:string", "@nest":"biblio" },
+        "number": { "@id": "fabio:hasSequenceIdentifier", "@type": "@vocab", "@nest":"biblio" },
+        "in": { "@id": "frbr:partOf", "@type": "@vocab", "@nest":"biblio" },
+        "hosting_data_source": { "@id": "dcat:accessService", "@type": "@vocab", "@nest":"biblio" },
+        
+        "relevant_organisations": { "@id": "dcterms:relation", "@type": "@vocab" },
+
+        "funding": { "@id": "frapo:isFundedBy", "@type": "@vocab" },
+        
+        "related_products": "@nest",
+        "cites": { "@id": "cito:cites", "@type": "@vocab", "@nest": "related products" } ,
+        "is_supplemented_by": { "@id": "frbr:supplement", "@type": "@vocab", "@nest": "related products" },
+        "is_documented_by": { "@id": "cito:isDocumentedBy", "@type": "@vocab", "@nest": "related products" },
+        "is_new_version_of": { "@id": "frbr:revisionOf", "@type": "@vocab", "@nest": "related products" },
+        "is_part_of": { "@id": "frbr:partOf", "@type": "@vocab", "@nest": "related products" },
+
+
+
+
+
+
+        "agent": "foaf:Agent",
+        "person": "foaf:Person",
+        "organisation": "foaf:Organization",
+        "name": "foaf:name",
+        
+        "given_name": "foaf:givenName",
+        "family_name": "foaf:familyName",
+        
+        "affiliations": { "@id": "pro:holdsRoleInTime", "@type": "@vocab"  },
+        "affiliation": { "@id": "pro:relatesToOrganization", "@type": "@vocab"  },
+        "period": { "@id": "tvc:atTime", "@type": "@vocab"  },
+        "start": { "@id": "ti:hasIntervalStartDate", "@type": "xsd:dateTime"  },
+        "end": { "@id": "ti:hasIntervalEndDate", "@type": "xsd:dateTime"  },
+        "affiliate": "scoro:affiliate",
+
+        "short_name": "frapo:hasAcronym",
+        "other_names": "skos:altLabel",
+        "country": "frapo:hasCountry",
+        "website": { "@id": "foaf:homepage", "@type": "@vocab"  },
+        "archive": "frapo:Repository",
+        "company": "frapo:Company",
+        "education": "frapo:University",
+        "facility": "frapo:Facility",
+        "government": "frapo:GovernmentOrganization",
+        "healthcare": "schema:MedicalOrganization",
+        "nonprofit": "frapo:NotForProfitOrganization",
+        "funder": "frapo:FundingAgency",
+        "research": "frapo:ResearchInstitute",
+        "unspecified": "foaf:Organization",
+
+        
+
+
+
+
+        "venue": "fabio:ExpressionCollection",
+
+        "title": "dcterms:title",
+        
+        "acronym": "frapo:hasAcronym",
+
+        "repository": "fabio:Repository",
+        "journal": "fabio:Journal",
+        "conference": "fabio:ConferenceProceedings",
+        "book": "fabio:Book",
+        "unknown": "fabio:ExpressionCollection",
+
+        "series": "prism:seriesTitle",
+
+        "creation_date": { "@id": "dcterms:created", "@type": "xsd:dateTime" },
+
+
+
+
+        "datasource": "dcat:DataService",
+
+        "policies": { "@id": "odrl:hasPolicy", "@type": "@vocab"  },
+        "about": { "@id": "odrl:action", "@type": "@vocab"  },
+        "targets": { "@id": "odrl:target", "@type": "@vocab"  },
+        "submission": "odrl:aggregate",
+        "preservation": "odrl:archive",
+        "embargoed access": "coar:c_f1cf",
+        "metadata only access": "coar:c_14cb",
+        "open access": "coar:c_abf2",
+        "restricted access": "coar:c_16ec",
+        "documented_at": { "@id": "foaf:page", "@type": "@vocab" },
+        "metadata": "fabio:Metadata",
+        "any": "fabio:Work",
+
+        "persistent_identity_systems": { "@id": "dcterms:conformsTo", "@type": "@vocab"  },
+        "pid_schemes": { "@id": "dcterms:requires", "@type": "@vocab"  },
+        "for": { "@id": "dcterms:coverage", "@type": "@vocab"  },
+
+        "audience": { "@id": "schema:audience", "@type": "@vocab"  },
+        "audience_type": { "@id": "schema:audienceType", "@type": "xsd:string"  },
+
+        "data_source_classification": { "@id": "dcat:theme", "@type": "@vocab"  },
+        "aggregator": "fabio:Catalog",
+        "scientific database": "fabio:Database",
+        "journal archive": "fabio:Journal",
+        "publisher archive": "vivo:Publisher",
+        "cris system": "frapo:ResearchInformationSystem",
+
+        "research_product_types": { "@id": "dcterms:coverage", "@type": "@vocab"  },
+
+        "disciplines": { "@id": "dcterms:subject", "@type": "@vocab", "@context": {"@base": "http://id.loc.gov/authorities/classification/"} },
+        "all": "loc:classification",
+
+
+
+
+        "grant": "frapo:Grant",
+
+        "grant_number":  { "@id": "frapo:hasGrantNumber", "@type": "xsd:string" },
+
+        "abstract": "dcterms:abstract",
+
+        "funding_agency": { "@id": "frapo:hasFundingAgency", "@type": "@vocab"  },
+
+        "funding_stream": "frapo:hasCallIdentifier",
+
+        "currency": { "@id": "frapo:hasCurrencyCode", "@type": "xsd:string" },
+
+        "funded_amount": { "@id": "frapo:hasCurrency", "@type": "xsd:float" },
+
+        "keywords": "prism:keyword",
+
+        "duration": { "@id": "dcterms:temporal", "@type": "@vocab"  },
+
+        "beneficiaries": { "@id": "frapo:supports", "@type": "@vocab"  },
+
+        "co-applicant": "scoro:co-applicant",
+        "lead applicant": "scoro:lead-applicant",
+        "project leader": "scoro:project-leader",
+        "project manager": "scoro:project-manager",
+        "project member": "scoro:project-member",
+        "workpackage leader": "scoro:workpackage-leader",
+
+
+
+        "topic": "fabio:SubjectTerm"
+    }
+}

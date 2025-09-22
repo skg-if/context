@@ -1,5 +1,21 @@
 # Releases Notes
 
+## Version 1.0.2 - 2025-09-22
+* Fixed several issues, in particular:
+  * Plural vs. singular nouns, the keys modified are the following ones:
+    * entity `research product`
+      * `contribution` --> `contribution_types`
+    * entity `agent`
+      * `type` --> `types`
+    * entity `data source`
+      * `research_product_type` --> `research_product_types`
+      * `discipline` --> `disciplines`
+      * `policy` --> `policies`
+      * `target` -->  `targets`
+  * Added all the identifiers indicated in https://github.com/skg-if/interoperability-framework/issues/17.
+  * Updated all the samples for this new version.
+
+
 ## Version 1.0.0 - 2024-12-22
 * The term `grant_number` has been added to the entity `Grant`. It reuse the [FRAPO](https://w3id.org/spar/frapo) data property `frapo:hasGrantNumber`.
 
