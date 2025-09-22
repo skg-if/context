@@ -39,14 +39,28 @@
         "identifiers": { "@id": "datacite:hasIdentifier", "@type": "@vocab"  },
         "scheme": { "@id": "datacite:usesIdentifierScheme", "@type": "@vocab"  },
         "value": "literal:hasLiteralValue",
-        "doi": "datacite:doi",
-        "pmid": "datacite:pmid",
-        "pmcid": "datacite:pmcid",
         "arxiv": "datacite:arxiv",
-        "url": "datacite:url",
-        "omid": "datacite:omid",
+        "bibcode": "datacite:bibcode",
         "crossref": "datacite:crossref",
+        "doi": "datacite:doi",
+        "eissn": "datacite:eissn",
+        "handle": "datacite:handle",
+        "isbn": "datacite:isbn",
+        "issn": "datacite:issn",
+        "ivoid": "datacite:ivoid",
+        "lissn": "datacite:lissn",
+        "omid": "datacite:omid",
         "openalex": "datacite:openalex",
+        "opendoar": "datacite:opendoar",
+        "orcid": "datacite:orcid",
+        "pmcid": "datacite:pmcid",
+        "pmid": "datacite:pmid",
+        "ror": "datacite:ror",
+        "spase": "datacite:spase",
+        "url": "datacite:url",
+        "urn": "datacite:urn",
+        "viaf": "datacite:viaf",
+        "w3id": "datacite:w3id",
 
         "entity_type": { "@id": "@type", "@type": "@vocab"  },
         "product": "fabio:Work",
@@ -160,8 +174,6 @@
 
 
 
-        "orcid": "datacite:orcid",
-        "viaf": "datacite:viaf",
         "agent": "foaf:Agent",
         "person": "foaf:Person",
         "organisation": "foaf:Organization",
@@ -177,7 +189,6 @@
         "end": { "@id": "ti:hasIntervalEndDate", "@type": "xsd:dateTime"  },
         "affiliate": "scoro:affiliate",
 
-        "ror": "datacite:ror",
         "short_name": "frapo:hasAcronym",
         "other_names": "skos:altLabel",
         "country": "frapo:hasCountry",
@@ -200,15 +211,6 @@
 
         "venue": "fabio:ExpressionCollection",
 
-        "issn": "datacite:issn",
-        "eissn": "datacite:eissn",
-        "lissn": "datacite:lissn",
-        "isbn": "datacite:isbn",
-        "opendoar": "datacite:opendoar",
-        "re3data.org": "datacite:re3data",
-        "fairsharing": "datacite:fairsharing",
-        "handle": "datacite:handle",
-        
         "title": "dcterms:title",
         
         "acronym": "frapo:hasAcronym",
