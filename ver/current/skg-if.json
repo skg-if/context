@@ -70,7 +70,7 @@
         "by": { "@id": "pro:isHeldBy", "@type": "@vocab"  },
         "declared_affiliations": { "@id": "pro:relatesToOrganization", "@type": "@vocab"  },
         "rank": { "@id": "co:index", "@type": "xsd:positiveInteger"  },
-        "contribution": { "@id": "scoro:withContribution", "@type": "@vocab"  },
+        "contribution_types": { "@id": "scoro:withContribution", "@type": "@vocab"  },
         "role": { "@id": "pro:withRole", "@type": "@vocab"  },
         "author": "pro:author",
         "publisher": "pro:publisher",
@@ -93,6 +93,7 @@
         "manifestations": { "@id": "frbr:realization", "@type": "@vocab" },
         
         "type": { "@id": "rdf:type", "@type": "@vocab" },
+        "types": { "@id": "rdf:type", "@type": "@vocab" },
         "class": "@id",
         "defined_in": { "@id": "skos:inScheme", "@type": "@vocab" },
         "labels": { "@id": "skos:prefLabel", "@container": "@language"  },
@@ -227,9 +228,9 @@
 
         "datasource": "dcat:DataService",
 
-        "policy": { "@id": "odrl:hasPolicy", "@type": "@vocab"  },
+        "policies": { "@id": "odrl:hasPolicy", "@type": "@vocab"  },
         "about": { "@id": "odrl:action", "@type": "@vocab"  },
-        "target": { "@id": "odrl:target", "@type": "@vocab"  },
+        "targets": { "@id": "odrl:target", "@type": "@vocab"  },
         "submission": "odrl:aggregate",
         "preservation": "odrl:archive",
         "embargoed access": "coar:c_f1cf",
@@ -254,9 +255,9 @@
         "publisher archive": "vivo:Publisher",
         "cris system": "frapo:ResearchInformationSystem",
 
-        "research_product_type": { "@id": "dcterms:coverage", "@type": "@vocab"  },
+        "research_product_types": { "@id": "dcterms:coverage", "@type": "@vocab"  },
 
-        "discipline": { "@id": "dcterms:subject", "@type": "@vocab", "@context": {"@base": "http://id.loc.gov/authorities/classification/"} },
+        "disciplines": { "@id": "dcterms:subject", "@type": "@vocab", "@context": {"@base": "http://id.loc.gov/authorities/classification/"} },
         "all": "loc:classification",
 
 
