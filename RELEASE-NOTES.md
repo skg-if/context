@@ -13,6 +13,7 @@
       * `policy` --> `policies`
       * `target` -->  `targets`
   * Added all the identifiers indicated in https://github.com/skg-if/interoperability-framework/issues/17.
+  * Added multilingual attributes for titles and abstracts of the entity `Grant` to align it with the same behaviour used for `Research product`.
   * Updated all the samples for this new version.
 
 

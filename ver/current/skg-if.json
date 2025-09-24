@@ -210,8 +210,6 @@
 
 
         "venue": "fabio:ExpressionCollection",
-
-        "title": "dcterms:title",
         
         "acronym": "frapo:hasAcronym",
 
@@ -268,8 +266,6 @@
         "grant": "frapo:Grant",
 
         "grant_number":  { "@id": "frapo:hasGrantNumber", "@type": "xsd:string" },
-
-        "abstract": "dcterms:abstract",
 
         "funding_agency": { "@id": "frapo:hasFundingAgency", "@type": "@vocab"  },
 
