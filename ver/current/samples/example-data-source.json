@@ -45,7 +45,7 @@
                     "for": [ "literature" ]
                 },
                 {
-                    "pid schemes": [ "doi" ],
+                    "pid_schemes": [ "doi" ],
                     "for": [ "metadata" ]
                 }
             ],
